@@ -1,0 +1,90 @@
+﻿[
+  {
+    "title": "Plain Shirt",
+    "detail": "A shirt with plain design.",
+    "fullDetail": "Plain design shirt. Created by material team.",
+    "img": "img/shutterstock_60286111.jpg",
+    "price": "590",
+    "promotionPrice": "59"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/shutterstock_66638548.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/shutterstock_413835.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/shutterstock_12645685.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/shutterstock_22485487.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/shutterstock_34427359.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/12.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/11.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/9.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/7.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  },
+  {
+    "title": "Spring Shirt",
+    "detail": "Made by high quality silk",
+    "fullDetail": "Plain design shirt. Created by material team. Made by high quality material.",
+    "img": "img/6.jpg",
+    "price": "800",
+    "promotionPrice": "80"
+  }
+]

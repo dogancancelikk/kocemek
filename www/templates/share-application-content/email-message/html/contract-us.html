@@ -1,0 +1,87 @@
+<!--View Information-->
+<!--View name : Contract Us-->
+<!--Controller name : contractUsCtrl-->
+<!--Controller path : www/templates/share-application-content/email-message/js/controllers.js-->
+<!--State name : app.contractUs-->
+<!--URL : #app/contractUs-->
+
+<ion-view view-title="">
+    <!--toolbar section-->
+    <ion-nav-buttons side="left">
+        <a ng-click="goBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons> <!--end left button on navigation bar-->
+    <md-toolbar class="md-tall md-primary toolbar-with-image">
+        <div>
+            <h1></h1>
+
+        </div>
+    </md-toolbar>
+    <!--end toolbar section-->
+
+
+    <!--contract us section-->
+    <ion-content id="contract-us-content">
+              <div class="row content">
+            <div class="col-90">
+            <h5> Merkez Ofis</h5>
+Koç Emek İnşaat Ticaret ve Sanayi Ltd. Şti.
+Köseoğlu Mahallesi Adnan Menderes Bulvarı 29/A Merkez YOZGAT
+Fax : 0354 212 66 06   GSM : 0541 558 11 51
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-75">
+            Telefon: 0354 212 50 55
+            </div>
+            <div class="col-25">
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-75">
+            Fax: 0354 212 66 06
+            </div>
+            <div class="col-25">
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-75">
+            GSM: 0541 558 11 51
+            </div>
+            <div class="col-25">
+                <i class="ion-android-textsms" ng-click="sentSms(contractInfo.telephone)"></i>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-75">
+                {{contractInfo.email}}
+            </div>
+            <div class="col-25">
+                <i class="ion-android-mail" ng-click="sentEmail(contractInfo.email)"></i>
+            </div>
+        </div>
+        <br>
+        <div class="row content">
+            <div class="col-90">
+            <h5> Yozgat Koç Hazır Beton Elemanları Nak. San. Ve Tic. Ltd. Şti.</h5>
+            Merkez : Organize Sanayi Bölgesi Yerköy/YOZGAT
+            Şube : Sarıhacılı Köyü Mevkii YOZGAT
+            </div>
+        </div>
+        <br>
+        <div class="row content">
+            <div class="col-90">
+            <h5>Koçlas Otomotiv Lastik Petrol Ürünleri Gıda Nak. İnş. Taah. San. Ve Tic. Ltd. Şti. (Shell Bayii)</h5>
+
+Organize Sanayi Bölgesi Girişi Shell Akaryakıt İstasyonu Yerköy/YOZGAT
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-90">
+                Herhangi bir sorunuz varsa lütfen bizimle iletişime geçin.
+            </div>
+        </div>
+        <!--end content section-->
+    </ion-content><!--end contract us section-->
+</ion-view>

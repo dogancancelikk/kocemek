@@ -1,0 +1,221 @@
+<!--View Information-->
+<!--View name : Menu-->
+<!--Controller name : menuCtrl-->
+<!--Controller path : www/templates/menu/js/controllers.js-->
+<!--State name : app-->
+<!--URL : #app-->
+
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-balanced  material-background-nav-bar">
+            <ion-nav-buttons side="left">
+                <a class="button button-icon button-clear ion-navicon" menu-toggle="left" ng-click="toggleLeft()"></a>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <md-sidenav md-component-id="left" on-swipe-left="closeSideNav()" on-drag-left="closeSideNav()">
+        <!--menu section-->
+        <div class="material-background" id="toggle-menu-left-header">
+            <!--menu header section-->
+            <div class="menu-left-header">
+                <img class="user-img" src="img/kocemeklogo.png">
+
+                <p>
+                    <!-- <br/>
+                    <span class="sub-title">İyiyizdir</span> -->
+                </p>
+            </div><!--end menu header section-->
+        </div> <!--menu content section-->
+        <ion-content id="toggle-menu-left-content">
+
+            <!--If device is android application will present below code.-->
+            <!--It will disable animation to better performance on android.-->
+            <!--list section-->
+            <div ng-if="isAndroid" class="menu-list">
+                <md-subheader class="md-warn"></md-subheader>
+                <div class="row menu-item"  ng-click="navigateTo('app.menuDashboard')">
+                    <div class="col-33">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Ana Sayfa</span>
+                    </div>
+                </div>
+                <div class="row menu-item"  ng-click="navigateTo('app.vision')">
+                    <div class="col-33">
+                        <i class="fa fa-inbox"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Kurumsal</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.contractlist')">
+                    <div class="col-33">
+                        <i class="fa fa-file-text"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Listem</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.about')">
+                    <div class="col-33">
+                        <i class="fa fa-cube"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Hakkımızda</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.productList')">
+                    <div class="col-33">
+                        <i class="fa fa-picture-o"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Galeri</span>
+                    </div>
+                </div>
+                <!-- <div ng-if="isAndroid" class="row menu-item" ng-click="navigateTo('app.androidMapConnect')">
+                    <div class="col-33">
+                        <i class="fa fa fa-street-view"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Harita</span>
+                    </div>
+                </div> -->
+                <div class="row menu-item" ng-click="navigateTo('app.iosMapConnect')">
+                    <div class="col-33">
+                        <i class="fa fa fa-street-view"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Harita</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.contractUs')">
+                    <div class="col-33">
+                        <i class="fa fa-pencil-square-o"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Bize Yazın</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.kosgeb')">
+                    <div class="col-33">
+                        <img src="img/kosgeb-1.png" style="width:20px !important; height:20px !important;">
+                    </div>
+                    <div class="col-66">
+                        <span>Kosgeb</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.referanslar')">
+                    <div class="col-33">
+                        <i class="fa fa-cog"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Referanslar</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.beton')">
+                    <div class="col-33">
+                        <i class="fa fa fa-cubes"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Beton</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.insaat')">
+                    <div class="col-33">
+                        <i class="fa fa-building"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>İnşaat</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.hafriyat')">
+                    <div class="col-33">
+                        <i class="fa fa fa-truck"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>Hafriyat</span>
+                    </div>
+                </div>
+                <div class="row menu-item" ng-click="navigateTo('app.contractUs')">
+                    <div class="col-33">
+                        <i class="fa fa-comments-o"></i>
+                    </div>
+                    <div class="col-66">
+                        <span>İletişim</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--If device is not Android application will present below code.-->
+            <!--It will show animation when selecting row.-->
+            <md-list ng-if="!isAndroid">
+                <md-subheader class="md-warn"></md-subheader>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.menuDashboard')">
+                    <i class="fa fa-home"></i>
+                    <span>Ana Sayfa</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.vision')">
+                    <i class="fa fa-inbox"></i>
+                    <span>Kurumsal</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.contractlist')">
+                    <i class="fa fa fa-file-text"></i>
+                    <span>Listem</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.about')">
+                    <i class="fa fa-cube"></i>
+                    <span>Hakkımızda</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.productList')">
+                    <i class="fa fa-picture-o"></i>
+                    <span>Galeri</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.iosMapConnect')">
+                    <i class="fa fa fa-street-view"></i>
+                    <span>Harita</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.contractUs')">
+                    <i class="fa fa fa-pencil-square-o"></i>
+                    <span>Bize Yazın</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.kosgeb')">
+                    <img src="img/kosgeb-1.png" style="width:20px !important; height:20px !important;">
+                    <span>Kosgeb</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.referanslar')">
+                    <i class="fa fa-cog"></i>
+                    <span>Referanslar</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.beton')">
+                    <i class="fa fa-cubes"></i>
+                    <span>Beton</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.insaat')">
+                    <i class="fa fa-building"></i>
+                    <span>İnşaat</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.hafriyat')">
+                    <i class="fa fa fa-truck"></i>
+                    <span>Hafriyat</span>
+                </md-list-item>
+                <md-list-item class="menu-list-item" ng-click="navigateTo('app.contractUs')">
+                    <i class="fa fa fa-comments-o"></i>
+                    <span>İletişim</span>
+                </md-list-item>
+            </md-list>
+            <!--end list section-->
+        </ion-content><!--end menu content section-->
+        <!--end menu section-->
+        <style media="screen">
+        img{
+height: 100px;
+width: 100px;
+display: block;
+}
+        </style>
+    </md-sidenav>
+</ion-side-menus>

@@ -1,0 +1,154 @@
+<!--View Information-->
+<!--View name : Menu Dashboard-->
+<!--Controller name : menuDashboardCtrl-->
+<!--Controller path : www/templates/themes/menu-dashboard/js/controllers.js-->
+<!--State name : app.menuDashboard-->
+<!--URL : #app/menuDashboard-->
+
+<ion-view title="Koç Emek İnşaat" >
+    <!--menu dashboard section-->
+    <ion-nav-buttons>
+    </ion-nav-buttons> <!--end left button on navigation bar-->
+    <ion-content scroll="false"  id="menu-dashboard-content">
+        <!--panel section-->
+        <div class="row">
+          <div class="col-33">
+
+          </div>
+          <div class="col-33">
+<img src="img/kocemeklogo.png" alt="Koç Emek İnşaat">
+          </div>
+          <div class="col-33">
+
+          </div>
+        </div>
+        <div class="menu-panel">
+
+          <style media="screen">
+          img{
+height: 100px;
+width: 100px;
+margin: auto;
+display: block;
+}
+          </style>
+            <div class="row">
+                <div class="col-33" ng-click="navigateTo('app.vision')">
+                    <i class="fa fa-inbox"></i>
+
+                    <p>Kurumsal</p>
+                </div>
+                <div class="col-33" ng-click="navigateTo('app.contractlist')">
+                    <i class="fa fa fa-file-text"></i>
+
+                    <p>Listem</p>
+                </div>
+                <div class="col-33" ng-click="navigateTo('app.about')">
+                    <i class="fa fa fa-camera"></i>
+
+                    <p>Hakkımızda</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-33" ng-click="navigateTo('app.productList')">
+                    <i class="fa fa-picture-o"></i>
+
+                    <p>Galeri</p>
+                </div>
+                <div class="col-33" ng-click="navigateTo('app.bizeyazin')">
+                    <i class="fa fa fa-pencil-square-o"></i>
+
+                    <p>Bize Yazın</p>
+                </div>
+                <div class="col-33" ng-click="navigateTo('app.iosMapConnect')">
+                    <i class="fa fa fa-street-view"></i>
+
+                    <p>Harita</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-33" >
+                    <img src="img/kosgeb-1.png" style="width : 30% ; height : 50%" ng-click="navigateTo('app.kosgeb')" >
+
+                    <p>Kosgeb</p>
+                </div>
+                <div class="col-33" ng-click="navigateTo('app.referanslar')">
+                    <i class="fa fa-cog"></i>
+
+                    <p>Referanslar</p>
+                </div>
+                <!-- app.dashboard -->
+                <div class="col-33" ng-click="navigateTo('app.beton')">
+                    <i class="fa fa-cubes"></i>
+
+                    <p>Beton</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-33" ng-click="navigateTo('app.insaat')">
+                    <i class="fa fa-building"></i>
+
+                    <p>İnşaat</p>
+                </div>
+                <div class="col-33" ng-click="navigateTo('app.hafriyat')">
+                    <i class="fa fa-truck"></i>
+
+                    <p>Hafriyat</p>
+                </div>
+                <div class="col-33" ng-click="navigateTo('app.contractUs')">
+                    <i class="fa fa-comments-o"></i>
+
+                    <p>İletişim</p>
+                </div>
+            </div>
+        </div><!--end panel section-->
+
+        <!--panel footer section-->
+        <!-- <div class="menu-dashboard-footer">
+            <md-whiteframe class="md-whiteframe-z1" layout ng-click="showToast('Wordpress Blog')">
+                <div class="row">
+                    <div class="col-10">
+                        <i class="fa fa-wordpress"></i>
+                    </div>
+                    <div class="col-80">
+                        Wordpress Blog
+                    </div>
+                    <div class="col-10">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </md-whiteframe>
+
+            <md-whiteframe class="md-whiteframe-z1" layout ng-click="showToast('Google Connect')">
+                <div class="row">
+                    <div class="col-10">
+                        <i class="fa fa-google-plus"></i>
+                    </div>
+                    <div class="col-80">
+                        Google Connect
+                    </div>
+                    <div class="col-10">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </md-whiteframe>
+
+            <md-whiteframe class="md-whiteframe-z1" layout ng-click="showToast('Facebook Connect')">
+                <div class="row">
+                    <div class="col-10">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="col-80">
+                        Facebook Connect
+                    </div>
+                    <div class="col-10">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </md-whiteframe>
+
+        </div> -->
+        <!--end panel footer section-->
+    </ion-content><!--Menu dashboard section-->
+</ion-view>

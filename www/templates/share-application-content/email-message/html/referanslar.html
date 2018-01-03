@@ -1,0 +1,44 @@
+<!--View Information-->
+<!--View name : Contract Us-->
+<!--Controller name : contractUsCtrl-->
+<!--Controller path : www/templates/share-application-content/email-message/js/controllers.js-->
+<!--State name : app.contractUs-->
+<!--URL : #app/contractUs-->
+
+<ion-view view-title="">
+    <!--toolbar section-->
+    <ion-nav-buttons side="left">
+        <a ng-click="goBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+            <i class="ion-android-arrow-back"></i>
+        </a>
+    </ion-nav-buttons> <!--end left button on navigation bar-->
+    <md-toolbar class="md-tall md-primary toolbar-mision-with-image">
+
+    </md-toolbar>
+    <!--end toolbar section-->
+
+
+    <!--contract us section-->
+    <ion-content id="contract-us-content">
+        <!--header section-->
+        <div class="row header">
+            <div class="col">
+                Referanslar
+            </div>
+
+        </div> <!--end header section-->
+
+        <div class="row content" ng-repeat="referans in productList">
+          <div class="col-10" style="color:red;">
+            <i class="icon ion-link"></i>
+          </div>
+
+            <div class="col-80" >
+              {{referans.name}}
+              <hr>
+            </div>
+
+        </div>
+        <!--end content section-->
+    </ion-content><!--end contract us section-->
+</ion-view>
